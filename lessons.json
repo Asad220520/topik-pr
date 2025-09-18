@@ -1,0 +1,443 @@
+[
+  {
+    "id": "ueber-mich-und-meine-familie",
+    "title": "О себе и семье",
+    "text": {
+      "de": "Ich heiße Altynai und seit 4 Wochen lerne ich Deutsch bei lwex. Ich studiere an der Manas Universität, Tourismus. Manas ist eine kirgisisch-türkische Universität. Dort studieren viele, weil man dort kostenlos studieren kann. Es gibt viele Möglichkeiten, wenn man an der Manas studiert. Mein Fachbereich ist Reiseleiter. Warum Reiseleiter? Weil ich mich seit Kindheit für Tourismus interessiere. Ich komme aus Issyk-Kul. Dort gibt es einen schönen See und kommen viele Touristen, besonders im Sommer. Ich bin wegen des Studiums nach Bischkek gezogen. Meine Familie wohnt in Issyk-Kul. Sie besteht aus 5 Personen: meine Eltern, zwei Brüder und ich. Mein Vater heißt Kanybek, er ist 54 und arbeitet als Lehrer. Er unterrichtet Kirgisisch und Literatur. Meine Mutter heißt Anara, sie ist 49 und hat momentan mit ihrer Arbeit aufgehört. Sie ist Krankenschwester von Beruf. Meine Brüder gehen noch in die Schule. Älterer Bruder heißt Beksultan, kleiner heißt Dastan. Sie sind 12 und 9 Jahre alt. Sie gehen gern in die Schule und machen ihre Hausaufgaben. Ich liebe meine Familie sehr, aber besuche sie nur 2 mal pro Jahr. Ich wohne in Bischkek im Studentenwohnheim mit meiner Freundin Sezim. Wir lernen auch zusammen Deutsch. Das Leben im Studentenwohnheim ist sehr lebendig und interessant. Jeden Tag kochen wir gemeinsam. Deutsch lernen wir jeden Tag 1 Stunde 20 Minuten. Unser Unterricht bei lwex beginnt um 18:00 Uhr und endet um 19:20 Uhr.",
+      "ru": "Меня зовут Алтынай, и я учу немецкий язык уже 4 недели в lwex. Я учусь в Университете Манас на факультете туризма. Манас — это киргизско-турецкий университет. Там учится много студентов, потому что обучение бесплатное. Есть много возможностей, если учиться в Манас. Моя специальность — экскурсовод. Почему экскурсовод? Потому что с детства я интересуюсь туризмом. Я из Иссык-Куля. Там есть красивое озеро, и летом приезжает много туристов. Я переехала в Бишкек из-за учебы. Моя семья живет в Иссык-Куле. В семье 5 человек: родители, два брата и я. Моего отца зовут Каныбек, ему 54 года, он работает учителем, преподает киргизский язык и литературу. Мою мать зовут Анара, ей 49 лет, сейчас она временно не работает, потому что заботится о младших детях. Она по профессии медсестра. Мои братья еще учатся в школе. Старшего брата зовут Бексултан, младшего — Дастан. Им 12 и 9 лет. Они любят ходить в школу и делать домашние задания. Я очень люблю свою семью, но навещаю её только 2 раза в год. Я живу в Бишкеке в студенческом общежитии с подругой Сезим. Мы вместе учим немецкий. Жизнь в общежитии очень активная и интересная. Каждый день мы готовим вместе. Немецкий мы учим каждый день по 1 часу 20 минут. Наш урок в lwex начинается в 18:00 и заканчивается в 19:20."
+    },
+    "questions": [
+      [
+        "Wie heißen Sie?",
+        "Как вас зовут?",
+        "Ich heiße Altynai.",
+        "Меня зовут Алтынай."
+      ],
+      [
+        "Woher kommen Sie?",
+        "Откуда вы?",
+        "Ich komme aus Issyk-Kul.",
+        "Я из Иссык-Куля."
+      ],
+      [
+        "Wo wohnen Sie?",
+        "Где вы живёте?",
+        "Ich wohne in Bischkek im Studentenwohnheim.",
+        "Я живу в Бишкеке в студенческом общежитии."
+      ],
+      [
+        "Was studieren Sie?",
+        "Что вы изучаете?",
+        "Ich studiere Tourismus an der Manas Universität.",
+        "Я изучаю туризм в Университете Манас."
+      ],
+      [
+        "Wie heißen Ihre Eltern?",
+        "Как зовут ваших родителей?",
+        "Mein Vater heißt Kanybek, meine Mutter heißt Anara.",
+        "Моего отца зовут Каныбек, мою мать — Анара."
+      ],
+      [
+        "Wo wohnen Ihre Eltern?",
+        "Где живут ваши родители?",
+        "Sie wohnen in Issyk-Kul.",
+        "Они живут в Иссык-Куле."
+      ],
+      [
+        "Wo arbeiten Ihre Eltern?",
+        "Где работают ваши родители?",
+        "Mein Vater arbeitet als Lehrer, meine Mutter war Krankenschwester.",
+        "Мой отец работает учителем, моя мать была медсестрой."
+      ],
+      [
+        "Aus wie vielen Personen besteht Ihre Familie?",
+        "Из скольких человек состоит ваша семья?",
+        "Meine Familie besteht aus 5 Personen.",
+        "Моя семья состоит из 5 человек."
+      ],
+      [
+        "Wie heißen Ihre Geschwister?",
+        "Как зовут ваших братьев?",
+        "Meine Brüder heißen Beksultan und Dastan.",
+        "Моих братьев зовут Бексултан и Дастан."
+      ],
+      [
+        "Was machen Ihre Geschwister?",
+        "Что делают ваши братья?",
+        "Sie gehen noch in die Schule und machen Hausaufgaben.",
+        "Они ещё учатся в школе и делают домашние задания."
+      ],
+      [
+        "Wie oft besuchen Sie Ihre Familie?",
+        "Как часто вы навещаете семью?",
+        "Ich besuche sie zweimal pro Jahr.",
+        "Я навещаю их два раза в год."
+      ],
+      [
+        "Mit wem wohnen Sie?",
+        "С кем вы живёте?",
+        "Ich wohne mit meiner Freundin Sezim.",
+        "Я живу с моей подругой Сезим."
+      ],
+      [
+        "Wie lange lernen Sie schon Deutsch?",
+        "Как долго вы учите немецкий?",
+        "Ich lerne Deutsch seit 4 Wochen.",
+        "Я учу немецкий уже 4 недели."
+      ],
+      [
+        "Wann beginnt Ihr Deutschkurs?",
+        "Когда начинается ваш курс немецкого?",
+        "Der Kurs beginnt um 18:00 Uhr.",
+        "Курс начинается в 18:00."
+      ],
+      [
+        "Wann endet der Deutschkurs?",
+        "Когда заканчивается курс немецкого?",
+        "Der Kurs endet um 19:20 Uhr.",
+        "Курс заканчивается в 19:20."
+      ],
+      [
+        "Warum studieren Sie Tourismus?",
+        "Почему вы изучаете туризм?",
+        "Weil ich mich seit Kindheit für Tourismus interessiere.",
+        "Потому что я интересуюсь туризмом с детства."
+      ],
+      [
+        "Warum haben Sie sich für Reiseleiter entschieden?",
+        "Почему вы выбрали профессию экскурсовода?",
+        "Weil ich Reiseleiter werden möchte.",
+        "Потому что я хочу быть экскурсоводом."
+      ]
+    ],
+    "vocab": [
+      ["heißen", "называться, зваться"],
+      ["studieren", "учиться, изучать"],
+      ["kostenlos", "бесплатно"],
+      ["weil", "потому что"],
+      ["die Möglichkeit", "возможность"],
+      ["-en", "окончание глагола в инфинитиве"],
+      ["das Fachbereich", "факультет, специальность"],
+      ["der Reiseleiter", "экскурсовод"],
+      ["die Kindheit", "детство"],
+      ["besonders", "особенно"],
+      ["das Gebiet", "область, район"],
+      ["wegen", "из-за, по причине"],
+      ["bestehen aus", "состоять из"],
+      ["unterrichten", "преподавать, учить"],
+      ["aufhören", "переставать, прекращать"],
+      ["kümmern", "заботиться"],
+      ["die Krankenschwester", "медсестра"],
+      ["besuchen", "посещать, навещать"],
+      ["das Studentenwohnheim", "студенческое общежитие"],
+      ["lebendig", "оживлённый, живой"],
+      ["gemeinsam", "вместе, совместно"],
+      ["Das macht viel Spaß", "Это приносит много удовольствия"],
+      ["enden", "заканчиваться"],
+      ["auf Deutsch sprechen", "говорить по-немецки"]
+    ]
+  },
+  {
+    "id": "mein-arbeitstag",
+    "title": "Мой учебный день",
+    "text": {
+      "de": "Wie alle Studenten muss ich einen großen Teil meines Tages in der Universität verbringen. An Werktagen wache ich normalerweise um 6 Uhr auf. Oft schlafe ich noch weiter, deshalb stehe ich erst um 6:30 auf. Manchmal verspäte ich mich, wenn der Minibus nicht regelmäßig kommt. Dann nehme ich ein Taxi oder mein Vater bringt mich zur Haltestelle. Im Winter ist das besonders schlimm. Nach dem Aufstehen gehe ich ins Bad, ziehe mich an und frühstücke manchmal. In der Mensa kann man auch frühstücken. Normalerweise esse ich ein Spiegelei oder Pfannkuchen. Meine erste Stunde beginnt um 9 Uhr. Ich wohne weit vom Zentrum, ungefähr 1,5 Stunden Fahrt zur Uni, einmal umsteigen. Pausen zwischen den Unterrichtsstunden nutze ich, um in der Universitätsbibliothek zu lernen. Mittagspause ist um 12 Uhr in der Mensa. Gegen 17 Uhr endet der Unterricht, danach fahre ich zum Deutschkurs, 30 Minuten mit dem Minibus. Nach 1,5 Stunden endet der Kurs, mein Vater holt mich ab. Gegen 20 Uhr sind wir zu Hause. Meine Mutter kocht Abendessen. Danach spüle ich Geschirr und gehe ins Bett. Hausaufgaben mache ich in der Uni, zu Hause kann ich mich nicht gut konzentrieren. Vor dem Schlafen lese ich noch ein Buch.",
+      "ru": "Как и все студенты, я провожу большую часть дня в университете. В будние дни я обычно просыпаюсь в 6 часов. Часто я ещё немного сплю, поэтому встаю только в 6:30. Иногда я опаздываю, если маршрутка приходит нерегулярно. Тогда я беру такси или отец отвозит меня до остановки. Зимой особенно сложно. После пробуждения иду в ванную, одеваюсь и иногда завтракаю. В столовой тоже можно позавтракать. Обычно я ем яичницу или блины. Моя первая пара начинается в 9 часов. Я живу далеко от центра, дорога до университета занимает примерно 1,5 часа с одной пересадкой. Перерывы между занятиями провожу в библиотеке университета. Обед в 12 часов в столовой. В 17 часов занятия заканчиваются, потом я еду на курс немецкого, 30 минут на маршрутке. После полутора часов курс заканчивается, отец забирает меня. В 20 часов мы дома. Мама готовит ужин. Потом я мою посуду и иду спать. Домашние задания делаю в университете, дома трудно сосредоточиться. Перед сном читаю книгу."
+    },
+    "questions": [
+      [
+        "Wie sieht Ihr Arbeitstag aus?",
+        "Как проходит ваш учебный день?",
+        "",
+        ""
+      ],
+      [
+        "Um wie viel Uhr stehen Sie auf?",
+        "Во сколько вы встаете?",
+        "Ich stehe normalerweise um 6:30 Uhr auf.",
+        "Я встаю обычно в 6:30."
+      ],
+      [
+        "Wie viel Stunden Schlaf brauchen Sie?",
+        "Сколько часов сна вам нужно?",
+        "",
+        ""
+      ],
+      [
+        "Wann gehen Sie ins Bett?",
+        "Когда вы ложитесь спать?",
+        "Ich gehe gegen 22 Uhr ins Bett.",
+        "Я ложусь спать около 22 часов."
+      ],
+      [
+        "Womit beginnt Ihr Arbeitstag?",
+        "С чего начинается ваш учебный день?",
+        "Mit dem Aufstehen und Frühstücken.",
+        "С пробуждения и завтрака."
+      ],
+      [
+        "Was essen Sie zu Frühstück?",
+        "Что вы едите на завтрак?",
+        "Ein Spiegelei oder Pfannkuchen.",
+        "Яичницу или блины."
+      ],
+      [
+        "Wo essen Sie zu Mittag?",
+        "Где вы обедаете?",
+        "In der Mensa der Uni.",
+        "В столовой университета."
+      ],
+      [
+        "Wann ist die Mittagspause?",
+        "Когда обеденный перерыв?",
+        "Um 12 Uhr.",
+        "В 12 часов."
+      ],
+      [
+        "Was machen Sie während der Pause?",
+        "Что вы делаете во время перерыва?",
+        "Ich lerne in der Bibliothek.",
+        "Я учусь в библиотеке."
+      ],
+      [
+        "Wo machen Sie Ihre Hausaufgaben?",
+        "Где вы делаете домашние задания?",
+        "In der Universitätsbibliothek.",
+        "В библиотеке университета."
+      ],
+      [
+        "Wie lange brauchen Sie bis zur Uni?",
+        "Сколько времени занимает дорога до университета?",
+        "Circa 1,5 Stunden.",
+        "Примерно 1,5 часа."
+      ],
+      [
+        "Wie viel mal müssen Sie umsteigen?",
+        "Сколько раз нужно пересаживаться?",
+        "Einmal.",
+        "Один раз."
+      ],
+      [
+        "Mit welchem Verkehrsmittel fahren Sie am meisten?",
+        "На каком транспорте вы чаще всего ездите?",
+        "Mit dem Minibus.",
+        "На маршрутке."
+      ],
+      [
+        "Wie ist die Busverbindung?",
+        "Как обстоят дела с автобусным сообщением?",
+        "",
+        ""
+      ],
+      ["Wie oft fahren die Busse?", "Как часто ходят автобусы?", "", ""],
+      [
+        "Wo liegt Ihre Uni?",
+        "Где находится ваш университет?",
+        "Im anderen Teil von Bischkek.",
+        "В другой части Бишкека."
+      ],
+      [
+        "Wann haben Sie Deutschkurs?",
+        "Когда у вас курс немецкого?",
+        "Gegen 17 Uhr.",
+        "Около 17 часов."
+      ],
+      [
+        "Wie kommen Sie zum Deutschunterricht?",
+        "Как вы добираетесь до курса немецкого?",
+        "Mit dem Minibus, 30 Minuten.",
+        "На маршрутке, 30 минут."
+      ],
+      [
+        "Was machen Sie nach dem Deutschkurs?",
+        "Что вы делаете после курса?",
+        "Mein Vater holt mich ab, dann Abendessen.",
+        "Отец забирает меня, затем ужин."
+      ],
+      [
+        "Was machen Sie abends?",
+        "Что вы делаете вечером?",
+        "Ich spüle Geschirr und gehe ins Bett.",
+        "Мою посуду и иду спать."
+      ],
+      [
+        "Wer kocht das Abendessen?",
+        "Кто готовит ужин?",
+        "Meine Mutter.",
+        "Моя мама."
+      ],
+      [
+        "Wann gibt es Abendbrot?",
+        "Когда ужин?",
+        "Gegen 20 Uhr.",
+        "Около 20 часов."
+      ],
+      [
+        "Womit beschäftigen Sie sich vor dem Schlafen?",
+        "Чем занимаетесь перед сном?",
+        "Ich lese ein Buch.",
+        "Я читаю книгу."
+      ]
+    ],
+    "vocab": [
+      ["der Teil, die Teile", "часть, части"],
+      ["verbringen", "проводить время"],
+      ["aufwachen", "просыпаться, пробуждаться"],
+      ["der Werktag", "рабочий день, будни"],
+      ["normalerweise", "обычно, как правило"],
+      ["kennen", "знать, быть знакомым"],
+      ["klingen", "звонить, раздаваться"],
+      ["ausschalten", "выключать, отключать"],
+      ["selten", "редкий, редко"],
+      ["sich verspäten", "опаздывать"],
+      ["in diesem Fall", "в этом случае"],
+      ["die Haltestelle", "остановка"],
+      ["schlimm", "плохой"],
+      ["anziehen", "одеваться"],
+      ["frühstücken", "завтракать"],
+      ["das Spiegelei", "яичница-глазунья"],
+      ["der Pfannkuchen", "блинчик"],
+      ["anfangen", "начинать"],
+      ["sich befinden", "находиться"],
+      ["circa (ca.)", "около, примерно"],
+      ["umsteigen", "пересаживаться"],
+      ["günstig", "благоприятный, выгодный, дешевый"],
+      ["abends", "по вечерам"],
+      ["die Kommilitonen", "одногруппники"],
+      ["anderthalb", "полтора часа"],
+      ["abholen", "забирать"],
+      ["das schmutzige Geschirr spülen", "мыть грязную посуду"],
+      ["einschlafen", "засыпать"],
+      ["vor dem Schlafen", "перед сном"]
+    ]
+  },
+  {
+    "id": "mein-studium",
+    "title": "Моя учеба",
+    "text": {
+      "de": "Ich bin Student und studiere an der kirgisischen nationalen Universität in Bischkek. Sie liegt im Zentrum von Bischkek und hat mehrere Filialen. Mein Fach ist Englisch und englische Literatur. Ich studiere im Hauptgebäude, ein schönes Gebäude. Ich bin im 3. Studienjahr. Normalerweise studieren wir 4 Jahre Bachelor und danach Master. In meiner Gruppe gibt es 15 Studenten. Mir gefällt mein Studium sehr. Wir sprechen miteinander auf Englisch und Deutsch, schauen Filme auf Englisch und besuchen Seminare für zukünftige Lehrer. Bei uns arbeiten englische und deutsche Professoren, die viel über Deutschland und andere Länder erzählen. Unsere zweite Fremdsprache ist Deutsch. Ich lerne Deutsch seit 3 Jahren, aber nur 2 Mal pro Woche. Deshalb besuche ich den Deutschkurs bei lwex. Ich habe dieses Fach gewählt, weil ich mich seit Kindheit für Fremdsprachen interessiere. Meine Schwester hat auch Englisch studiert und inspiriert mich. Sie arbeitet als Englischlehrerin. Ich möchte später in einer internationalen Schule arbeiten. Ich studiere in der Budgetabteilung, deshalb zahle ich keine Studiengebühren. Ich habe einen Test sehr gut bestanden und bekomme sogar ein Stipendium. Viele Studenten studieren auf diese Weise in Kirgisistan, und ich glaube, das ist eine gute Möglichkeit.",
+      "ru": "Я студент и учусь в Киргизском национальном университете в Бишкеке. Он находится в центре города и имеет несколько филиалов. Моя специальность — английский язык и английская литература. Я учусь в главном здании, красивом здании. Я на третьем курсе. Обычно бакалавриат длится 4 года, затем можно поступать в магистратуру. В моей группе 15 студентов. Мне очень нравится учеба. Мы общаемся на английском и немецком, смотрим фильмы на английском и посещаем семинары для будущих преподавателей. У нас работают английские и немецкие преподаватели, которые много рассказывают о Германии и других странах. Второй иностранный язык — немецкий. Я учу немецкий 3 года, но только два раза в неделю, поэтому посещаю курс немецкого в lwex. Я выбрал эту специальность, потому что с детства интересуюсь иностранными языками. Моя сестра тоже изучала английский и вдохновляет меня. Она работает учителем английского. В будущем я хочу работать в международной школе. Я учусь в бюджетной форме, поэтому не плачу за обучение. Я очень хорошо сдал тест и даже получаю стипендию. Многие студенты в Киргизии учатся таким образом, и я считаю это хорошей возможностью."
+    },
+    "questions": [
+      [
+        "Wo studieren Sie?",
+        "Где вы учитесь?",
+        "An der kirgisischen nationalen Universität in Bischkek.",
+        "В Киргизском национальном университете в Бишкеке."
+      ],
+      [
+        "Was studieren Sie?",
+        "Что вы изучаете?",
+        "Englisch und englische Literatur.",
+        "Английский язык и английскую литературу."
+      ],
+      [
+        "Welches Fach studieren Sie?",
+        "Какую специальность вы изучаете?",
+        "Englisch und englische Literatur.",
+        "Английский язык и английскую литературу."
+      ],
+      [
+        "In welchem Studienjahr sind Sie?",
+        "На каком курсе вы учитесь?",
+        "Im 3. Studienjahr.",
+        "На третьем курсе."
+      ],
+      [
+        "Wie viele Studenten gibt es in Ihrer Gruppe?",
+        "Сколько студентов в вашей группе?",
+        "15 Studenten.",
+        "15 студентов."
+      ],
+      [
+        "Welche Fächer haben Sie noch außer Englisch?",
+        "Какие еще предметы кроме английского?",
+        "Deutsch als zweite Fremdsprache.",
+        "Немецкий как второй иностранный."
+      ],
+      [
+        "Warum haben Sie diesen Beruf ausgewählt?",
+        "Почему выбрали эту специальность?",
+        "Weil ich mich seit Kindheit für Fremdsprachen interessiere.",
+        "Потому что с детства интересуюсь иностранными языками."
+      ],
+      [
+        "Wie lange dauert Ihr Studium?",
+        "Сколько длится учеба?",
+        "4 Jahre Bachelor, danach Master.",
+        "4 года бакалавриат, затем магистратура."
+      ],
+      [
+        "Was wollen Sie machen, wenn Sie fertig studiert haben?",
+        "Что вы хотите делать после учебы?",
+        "In einer internationalen Schule arbeiten.",
+        "Работать в международной школе."
+      ],
+      [
+        "Wie oft haben Sie an der Uni Deutsch?",
+        "Как часто вы учите немецкий в университете?",
+        "2 Mal pro Woche.",
+        "Два раза в неделю."
+      ],
+      [
+        "Welcher Deutschunterricht ist besser?",
+        "Какой курс немецкого лучше?",
+        "Der Kurs bei lwex.",
+        "Курс в lwex."
+      ],
+      [
+        "Was bedeutet Budgetabteilung?",
+        "Что значит «бюджетная форма обучения»?",
+        "Man zahlt keine Studiengebühren.",
+        "Не платить за обучение."
+      ],
+      ["Wie groß ist das Stipendium?", "Как велика стипендия?", "", ""],
+      [
+        "Was gefällt Ihnen in Ihrem Studium?",
+        "Что вам нравится в учебе?",
+        "Der Unterricht und die Seminare.",
+        "Занятия и семинары."
+      ],
+      [
+        "Was macht Ihnen am meisten Spaß?",
+        "Что доставляет наибольшее удовольствие?",
+        "Kommunizieren und Sprachen lernen.",
+        "Общение и изучение языков."
+      ],
+      [
+        "Wer finanziert Sie?",
+        "Кто финансирует ваше обучение?",
+        "Das Budget und Stipendium.",
+        "Бюджет и стипендия."
+      ]
+    ],
+    "vocab": [
+      ["das Fach", "предмет, специальность, профессия"],
+      ["das Hauptgebäude", "главное здание, главный корпус"],
+      ["das Gebäude", "здание, корпус"],
+      ["das Studienjahr", "учебный год, курс(в ВУЗе)"],
+      ["es gibt", "есть, имеется"],
+      ["gefallen", "нравиться"],
+      ["miteinander sprechen", "говорить друг с другом"],
+      ["Filme schauen", "смотреть фильмы"],
+      ["verschiedene Seminare besuchen", "разные семинары посещать"],
+      ["erzählen über", "рассказывать о"],
+      ["effizient", "эффективный, действенный"],
+      ["auswählen", "выбирать"],
+      ["kommunizieren", "общаться"],
+      ["inspirieren", "вдохновлять, инспирировать"],
+      [
+        "in einer internationalen Schule arbeiten",
+        "работать в одной из международных школ"
+      ],
+      ["verbessern", "улучшать"],
+      ["vielleicht", "может быть, возможно"],
+      ["als Deutschlehrer arbeiten", "работать как учитель немецкого"],
+      ["die Budget Abteilung", "бюджетное отделение"],
+      ["das Studentengebühr", "студенческие сборы"],
+      ["einen Test gut bestehen", "пройти тест хорошо, хорошо сдать тест"],
+      ["zahlen", "платить"],
+      ["bekommen", "получать"]
+    ]
+  }
+]
