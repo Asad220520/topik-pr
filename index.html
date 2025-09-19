@@ -206,6 +206,11 @@
           <button onclick="clearVocab()">🗑 Очистить словарь</button>
         </div>
       </div>
+
+      <!-- КНОПКА СБРОСА -->
+      <div style="text-align:center; margin-top: 20px;">
+        <button onclick="resetLessons()">♻ Сбросить данные</button>
+      </div>
     </div>
 
     <!-- МОДАЛКИ -->
@@ -250,16 +255,29 @@
 
       async function loadLessons() {
         try {
-          const response = await fetch("lessons.json");
-          lessons = await response.json();
-          localStorage.setItem("lessons", JSON.stringify(lessons));
+          // пробуем взять из localStorage
+          const saved = localStorage.getItem("lessons");
+          if (saved) {
+            lessons = JSON.parse(saved);
+          } else {
+            const response = await fetch("lessons.json");
+            lessons = await response.json();
+            localStorage.setItem("lessons", JSON.stringify(lessons));
+          }
+
           currentLessonId = lessons[0]?.id || null;
           populateLessonSelect();
           renderAll();
           showTab("text");
         } catch (e) {
-          console.error("Ошибка загрузки JSON:", e);
+          console.error("Ошибка загрузки:", e);
         }
+      }
+
+      function resetLessons() {
+        if (!confirm("Сбросить данные и загрузить заново из lessons.json?")) return;
+        localStorage.removeItem("lessons");
+        loadLessons();
       }
 
       function populateLessonSelect() {
