@@ -139,17 +139,17 @@
   },
   {
     "id": "mein-arbeitstag",
-    "title": "Мой учебный день",
+    "title": "Мой рабочий день",
     "text": {
-      "de": "Wie alle Studenten muss ich einen großen Teil meines Tages in der Universität verbringen. An Werktagen wache ich normalerweise um 6 Uhr auf. Oft schlafe ich noch weiter, deshalb stehe ich erst um 6:30 auf. Manchmal verspäte ich mich, wenn der Minibus nicht regelmäßig kommt. Dann nehme ich ein Taxi oder mein Vater bringt mich zur Haltestelle. Im Winter ist das besonders schlimm. Nach dem Aufstehen gehe ich ins Bad, ziehe mich an und frühstücke manchmal. In der Mensa kann man auch frühstücken. Normalerweise esse ich ein Spiegelei oder Pfannkuchen. Meine erste Stunde beginnt um 9 Uhr. Ich wohne weit vom Zentrum, ungefähr 1,5 Stunden Fahrt zur Uni, einmal umsteigen. Pausen zwischen den Unterrichtsstunden nutze ich, um in der Universitätsbibliothek zu lernen. Mittagspause ist um 12 Uhr in der Mensa. Gegen 17 Uhr endet der Unterricht, danach fahre ich zum Deutschkurs, 30 Minuten mit dem Minibus. Nach 1,5 Stunden endet der Kurs, mein Vater holt mich ab. Gegen 20 Uhr sind wir zu Hause. Meine Mutter kocht Abendessen. Danach spüle ich Geschirr und gehe ins Bett. Hausaufgaben mache ich in der Uni, zu Hause kann ich mich nicht gut konzentrieren. Vor dem Schlafen lese ich noch ein Buch.",
-      "ru": "Как и все студенты, я провожу большую часть дня в университете. В будние дни я обычно просыпаюсь в 6 часов. Часто я ещё немного сплю, поэтому встаю только в 6:30. Иногда я опаздываю, если маршрутка приходит нерегулярно. Тогда я беру такси или отец отвозит меня до остановки. Зимой особенно сложно. После пробуждения иду в ванную, одеваюсь и иногда завтракаю. В столовой тоже можно позавтракать. Обычно я ем яичницу или блины. Моя первая пара начинается в 9 часов. Я живу далеко от центра, дорога до университета занимает примерно 1,5 часа с одной пересадкой. Перерывы между занятиями провожу в библиотеке университета. Обед в 12 часов в столовой. В 17 часов занятия заканчиваются, потом я еду на курс немецкого, 30 минут на маршрутке. После полутора часов курс заканчивается, отец забирает меня. В 20 часов мы дома. Мама готовит ужин. Потом я мою посуду и иду спать. Домашние задания делаю в университете, дома трудно сосредоточиться. Перед сном читаю книгу."
+      "de": "Wie alle Arbeitnehmer verbringe ich einen großen Teil meines Tages im Büro. An Werktagen wache ich normalerweise um 6 Uhr auf. Oft schlafe ich noch weiter, deshalb stehe ich erst um 6:30 Uhr auf. Nach dem Aufstehen gehe ich ins Bad, ziehe mich an und frühstücke. Um 7:30 Uhr fahre ich mit dem Auto oder öffentlichen Verkehrsmitteln zur Arbeit. Mein Arbeitstag beginnt um 8 Uhr und endet um 17 Uhr. Während der Mittagspause um 12 Uhr esse ich in der Kantine. Nach der Arbeit fahre ich nach Hause, manchmal erledige ich Einkäufe oder gehe zum Sport. Gegen 20 Uhr sind wir zu Hause, meine Familie bereitet das Abendessen vor. Danach entspanne ich mich, lese ein Buch oder sehe fern, bevor ich gegen 22 Uhr ins Bett gehe.",
+      "ru": "Как и все работающие, я провожу большую часть дня в офисе. В будние дни я обычно просыпаюсь в 6 часов. Часто я ещё немного сплю, поэтому встаю только в 6:30. После пробуждения иду в ванную, одеваюсь и завтракаю. В 7:30 я еду на работу на машине или общественном транспорте. Мой рабочий день начинается в 8 часов и заканчивается в 17 часов. Во время обеденного перерыва в 12 часов я обедаю в столовой. После работы я еду домой, иногда делаю покупки или иду на спорт. В 20 часов мы дома, моя семья готовит ужин. Потом я отдыхаю, читаю книгу или смотрю телевизор, а около 22 часов ложусь спать."
     },
     "questions": [
       [
         "Wie sieht Ihr Arbeitstag aus?",
-        "Как проходит ваш учебный день?",
-        "",
-        ""
+        "Как проходит ваш рабочий день?",
+        "Ich verbringe den größten Teil meines Tages im Büro.",
+        "Я провожу большую часть дня в офисе."
       ],
       [
         "Um wie viel Uhr stehen Sie auf?",
@@ -160,8 +160,8 @@
       [
         "Wie viel Stunden Schlaf brauchen Sie?",
         "Сколько часов сна вам нужно?",
-        "",
-        ""
+        "Ich brauche ungefähr 7 Stunden Schlaf.",
+        "Мне нужно примерно 7 часов сна."
       ],
       [
         "Wann gehen Sie ins Bett?",
@@ -171,21 +171,21 @@
       ],
       [
         "Womit beginnt Ihr Arbeitstag?",
-        "С чего начинается ваш учебный день?",
+        "С чего начинается ваш рабочий день?",
         "Mit dem Aufstehen und Frühstücken.",
         "С пробуждения и завтрака."
       ],
       [
         "Was essen Sie zu Frühstück?",
         "Что вы едите на завтрак?",
-        "Ein Spiegelei oder Pfannkuchen.",
-        "Яичницу или блины."
+        "Ein Brötchen und Kaffee.",
+        "Булочку и кофе."
       ],
       [
         "Wo essen Sie zu Mittag?",
         "Где вы обедаете?",
-        "In der Mensa der Uni.",
-        "В столовой университета."
+        "In der Kantine.",
+        "В столовой."
       ],
       [
         "Wann ist die Mittagspause?",
@@ -196,75 +196,32 @@
       [
         "Was machen Sie während der Pause?",
         "Что вы делаете во время перерыва?",
-        "Ich lerne in der Bibliothek.",
-        "Я учусь в библиотеке."
+        "Ich esse und entspanne mich kurz.",
+        "Я ем и немного отдыхаю."
       ],
       [
-        "Wo machen Sie Ihre Hausaufgaben?",
-        "Где вы делаете домашние задания?",
-        "In der Universitätsbibliothek.",
-        "В библиотеке университета."
+        "Wie kommen Sie zur Arbeit?",
+        "Как вы добираетесь на работу?",
+        "Mit dem Auto oder öffentlichen Verkehrsmitteln.",
+        "На машине или общественным транспортом."
       ],
       [
-        "Wie lange brauchen Sie bis zur Uni?",
-        "Сколько времени занимает дорога до университета?",
-        "Circa 1,5 Stunden.",
-        "Примерно 1,5 часа."
+        "Wann endet Ihr Arbeitstag?",
+        "Когда заканчивается ваш рабочий день?",
+        "Um 17 Uhr.",
+        "В 17 часов."
       ],
       [
-        "Wie viel mal müssen Sie umsteigen?",
-        "Сколько раз нужно пересаживаться?",
-        "Einmal.",
-        "Один раз."
-      ],
-      [
-        "Mit welchem Verkehrsmittel fahren Sie am meisten?",
-        "На каком транспорте вы чаще всего ездите?",
-        "Mit dem Minibus.",
-        "На маршрутке."
-      ],
-      [
-        "Wie ist die Busverbindung?",
-        "Как обстоят дела с автобусным сообщением?",
-        "",
-        ""
-      ],
-      ["Wie oft fahren die Busse?", "Как часто ходят автобусы?", "", ""],
-      [
-        "Wo liegt Ihre Uni?",
-        "Где находится ваш университет?",
-        "Im anderen Teil von Bischkek.",
-        "В другой части Бишкека."
-      ],
-      [
-        "Wann haben Sie Deutschkurs?",
-        "Когда у вас курс немецкого?",
-        "Gegen 17 Uhr.",
-        "Около 17 часов."
-      ],
-      [
-        "Wie kommen Sie zum Deutschunterricht?",
-        "Как вы добираетесь до курса немецкого?",
-        "Mit dem Minibus, 30 Minuten.",
-        "На маршрутке, 30 минут."
-      ],
-      [
-        "Was machen Sie nach dem Deutschkurs?",
-        "Что вы делаете после курса?",
-        "Mein Vater holt mich ab, dann Abendessen.",
-        "Отец забирает меня, затем ужин."
-      ],
-      [
-        "Was machen Sie abends?",
-        "Что вы делаете вечером?",
-        "Ich spüle Geschirr und gehe ins Bett.",
-        "Мою посуду и иду спать."
+        "Was machen Sie nach der Arbeit?",
+        "Что вы делаете после работы?",
+        "Ich fahre nach Hause, erledige Einkäufe oder gehe zum Sport.",
+        "Я еду домой, делаю покупки или иду на спорт."
       ],
       [
         "Wer kocht das Abendessen?",
         "Кто готовит ужин?",
-        "Meine Mutter.",
-        "Моя мама."
+        "Meine Familie.",
+        "Моя семья."
       ],
       [
         "Wann gibt es Abendbrot?",
@@ -275,8 +232,8 @@
       [
         "Womit beschäftigen Sie sich vor dem Schlafen?",
         "Чем занимаетесь перед сном?",
-        "Ich lese ein Buch.",
-        "Я читаю книгу."
+        "Ich lese ein Buch oder sehe fern.",
+        "Я читаю книгу или смотрю телевизор."
       ]
     ],
     "vocab": [
@@ -285,32 +242,17 @@
       ["aufwachen", "просыпаться, пробуждаться"],
       ["der Werktag", "рабочий день, будни"],
       ["normalerweise", "обычно, как правило"],
-      ["kennen", "знать, быть знакомым"],
-      ["klingen", "звонить, раздаваться"],
-      ["ausschalten", "выключать, отключать"],
-      ["selten", "редкий, редко"],
-      ["sich verspäten", "опаздывать"],
-      ["in diesem Fall", "в этом случае"],
-      ["die Haltestelle", "остановка"],
-      ["schlimm", "плохой"],
       ["anziehen", "одеваться"],
       ["frühstücken", "завтракать"],
-      ["das Spiegelei", "яичница-глазунья"],
-      ["der Pfannkuchen", "блинчик"],
-      ["anfangen", "начинать"],
-      ["sich befinden", "находиться"],
-      ["circa (ca.)", "около, примерно"],
-      ["umsteigen", "пересаживаться"],
-      ["günstig", "благоприятный, выгодный, дешевый"],
-      ["abends", "по вечерам"],
-      ["die Kommilitonen", "одногруппники"],
-      ["anderthalb", "полтора часа"],
-      ["abholen", "забирать"],
-      ["das schmutzige Geschirr spülen", "мыть грязную посуду"],
-      ["einschlafen", "засыпать"],
+      ["die Kantine", "столовая"],
+      ["der Arbeitstag", "рабочий день"],
+      ["der Feierabend", "конец рабочего дня"],
+      ["entspannen", "расслабляться, отдыхать"],
+      ["das Abendessen", "ужин"],
       ["vor dem Schlafen", "перед сном"]
     ]
   },
+
   {
     "id": "mein-studium",
     "title": "Моя учеба",
