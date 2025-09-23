@@ -141,118 +141,112 @@
     "id": "mein-arbeitstag",
     "title": "Мой рабочий день",
     "text": {
-      "de": "Wie alle Arbeitnehmer verbringe ich einen großen Teil meines Tages im Büro. An Werktagen wache ich normalerweise um 6 Uhr auf. Oft schlafe ich noch weiter, deshalb stehe ich erst um 6:30 Uhr auf. Nach dem Aufstehen gehe ich ins Bad, ziehe mich an und frühstücke. Um 7:30 Uhr fahre ich mit dem Auto oder öffentlichen Verkehrsmitteln zur Arbeit. Mein Arbeitstag beginnt um 8 Uhr und endet um 17 Uhr. Während der Mittagspause um 12 Uhr esse ich in der Kantine. Nach der Arbeit fahre ich nach Hause, manchmal erledige ich Einkäufe oder gehe zum Sport. Gegen 20 Uhr sind wir zu Hause, meine Familie bereitet das Abendessen vor. Danach entspanne ich mich, lese ein Buch oder sehe fern, bevor ich gegen 22 Uhr ins Bett gehe.",
-      "ru": "Как и все работающие, я провожу большую часть дня в офисе. В будние дни я обычно просыпаюсь в 6 часов. Часто я ещё немного сплю, поэтому встаю только в 6:30. После пробуждения иду в ванную, одеваюсь и завтракаю. В 7:30 я еду на работу на машине или общественном транспорте. Мой рабочий день начинается в 8 часов и заканчивается в 17 часов. Во время обеденного перерыва в 12 часов я обедаю в столовой. После работы я еду домой, иногда делаю покупки или иду на спорт. В 20 часов мы дома, моя семья готовит ужин. Потом я отдыхаю, читаю книгу или смотрю телевизор, а около 22 часов ложусь спать."
+      "de": "Mein Arbeitstag ist flexibel, weil ich zu Hause arbeite. Ich stehe meistens um 8 Uhr auf, frühstücke und beginne dann am Computer zu arbeiten. Wichtig ist, alles bis zum Termin fertig zu machen. Meine Mittagspause ist um 13 Uhr, ich esse zu Hause und mache manchmal einen kurzen Spaziergang. Der Arbeitstag endet, wenn die Aufgaben erledigt sind. Nach der Arbeit entspanne ich mich, schaue Filme oder spiele am Computer. Abends koche ich oder esse mit meiner Familie. Vor dem Schlafen lese ich oder höre Musik, und gegen Mitternacht gehe ich ins Bett.",
+      "ru": "Мой рабочий день гибкий, потому что я работаю дома. Обычно я встаю в 8 часов, завтракаю и начинаю работать за компьютером. Главное — всё закончить к сроку. Мой обеденный перерыв в час дня, я обедаю дома и иногда немного гуляю. Рабочий день заканчивается, когда задания выполнены. После работы я отдыхаю, смотрю фильмы или играю на компьютере. Вечером я готовлю или ужинаю с семьёй. Перед сном я читаю или слушаю музыку и около полуночи ложусь спать."
     },
     "questions": [
       [
         "Wie sieht Ihr Arbeitstag aus?",
         "Как проходит ваш рабочий день?",
-        "Ich verbringe den größten Teil meines Tages im Büro.",
-        "Я провожу большую часть дня в офисе."
+        "Mein Arbeitstag ist flexibel, weil ich zu Hause arbeite. Wichtig ist, alles bis zum Termin fertig zu machen.",
+        "Мой рабочий день гибкий, потому что я работаю дома. Главное — всё закончить к сроку."
       ],
       [
         "Um wie viel Uhr stehen Sie auf?",
-        "Во сколько вы встаете?",
-        "Ich stehe normalerweise um 6:30 Uhr auf.",
-        "Я встаю обычно в 6:30."
+        "Во сколько вы встаёте?",
+        "Ich stehe meistens um 8 Uhr auf.",
+        "Я обычно встаю в 8 часов."
       ],
       [
         "Wie viel Stunden Schlaf brauchen Sie?",
         "Сколько часов сна вам нужно?",
-        "Ich brauche ungefähr 7 Stunden Schlaf.",
-        "Мне нужно примерно 7 часов сна."
+        "Ich brauche ungefähr 7–8 Stunden Schlaf.",
+        "Мне нужно примерно 7–8 часов сна."
       ],
       [
         "Wann gehen Sie ins Bett?",
         "Когда вы ложитесь спать?",
-        "Ich gehe gegen 22 Uhr ins Bett.",
-        "Я ложусь спать около 22 часов."
+        "Ich gehe gegen Mitternacht ins Bett.",
+        "Я ложусь спать около полуночи."
       ],
       [
         "Womit beginnt Ihr Arbeitstag?",
         "С чего начинается ваш рабочий день?",
-        "Mit dem Aufstehen und Frühstücken.",
-        "С пробуждения и завтрака."
+        "Mein Arbeitstag beginnt mit Frühstück und dem Computer.",
+        "Мой рабочий день начинается с завтрака и компьютера."
       ],
       [
         "Was essen Sie zu Frühstück?",
         "Что вы едите на завтрак?",
-        "Ein Brötchen und Kaffee.",
-        "Булочку и кофе."
+        "Ich esse ein Brötchen und trinke Tee.",
+        "Я ем булочку и пью чай."
       ],
       [
         "Wo essen Sie zu Mittag?",
         "Где вы обедаете?",
-        "In der Kantine.",
-        "В столовой."
+        "Ich esse zu Hause.",
+        "Я обедаю дома."
       ],
       [
         "Wann ist die Mittagspause?",
         "Когда обеденный перерыв?",
-        "Um 12 Uhr.",
-        "В 12 часов."
+        "Meine Mittagspause ist um 13 Uhr.",
+        "Мой обеденный перерыв в час дня."
       ],
       [
         "Was machen Sie während der Pause?",
         "Что вы делаете во время перерыва?",
-        "Ich esse und entspanne mich kurz.",
-        "Я ем и немного отдыхаю."
+        "Ich esse, höre Musik oder mache einen kurzen Spaziergang.",
+        "Я ем, слушаю музыку или немного гуляю."
       ],
       [
         "Wie kommen Sie zur Arbeit?",
         "Как вы добираетесь на работу?",
-        "Mit dem Auto oder öffentlichen Verkehrsmitteln.",
-        "На машине или общественным транспортом."
+        "Ich muss nicht fahren, ich arbeite zu Hause.",
+        "Мне не нужно ехать, я работаю дома."
       ],
       [
         "Wann endet Ihr Arbeitstag?",
         "Когда заканчивается ваш рабочий день?",
-        "Um 17 Uhr.",
-        "В 17 часов."
+        "Mein Arbeitstag endet, wenn die Aufgaben fertig sind.",
+        "Мой рабочий день заканчивается, когда задания выполнены."
       ],
       [
         "Was machen Sie nach der Arbeit?",
         "Что вы делаете после работы?",
-        "Ich fahre nach Hause, erledige Einkäufe oder gehe zum Sport.",
-        "Я еду домой, делаю покупки или иду на спорт."
+        "Nach der Arbeit entspanne ich mich, schaue Filme oder spiele am Computer.",
+        "После работы я отдыхаю, смотрю фильмы или играю на компьютере."
       ],
       [
         "Wer kocht das Abendessen?",
         "Кто готовит ужин?",
-        "Meine Familie.",
-        "Моя семья."
+        "Meistens koche ich selbst.",
+        "Обычно я сам готовлю."
       ],
       [
         "Wann gibt es Abendbrot?",
         "Когда ужин?",
-        "Gegen 20 Uhr.",
-        "Около 20 часов."
+        "Abendbrot gibt es gegen 19 Uhr.",
+        "Ужин около 7 часов вечера."
       ],
       [
         "Womit beschäftigen Sie sich vor dem Schlafen?",
-        "Чем занимаетесь перед сном?",
-        "Ich lese ein Buch oder sehe fern.",
-        "Я читаю книгу или смотрю телевизор."
+        "Чем вы занимаетесь перед сном?",
+        "Vor dem Schlafen lese ich oder höre Musik.",
+        "Перед сном я читаю или слушаю музыку."
       ]
     ],
     "vocab": [
-      ["der Teil, die Teile", "часть, части"],
-      ["verbringen", "проводить время"],
-      ["aufwachen", "просыпаться, пробуждаться"],
-      ["der Werktag", "рабочий день, будни"],
-      ["normalerweise", "обычно, как правило"],
-      ["anziehen", "одеваться"],
-      ["frühstücken", "завтракать"],
-      ["die Kantine", "столовая"],
-      ["der Arbeitstag", "рабочий день"],
-      ["der Feierabend", "конец рабочего дня"],
+      ["flexibel", "гибкий"],
+      ["der Termin, -e", "срок, встреча"],
+      ["meistens", "обычно, чаще всего"],
+      ["der Spaziergang, Spaziergänge", "прогулка"],
+      ["erledigen", "выполнять, завершать"],
       ["entspannen", "расслабляться, отдыхать"],
-      ["das Abendessen", "ужин"],
-      ["vor dem Schlafen", "перед сном"]
+      ["kochen", "готовить (еду)"],
+      ["Mitternacht", "полночь"]
     ]
   },
-
   {
     "id": "mein-studium",
     "title": "Моя учеба",
@@ -380,6 +374,106 @@
       ["einen Test gut bestehen", "пройти тест хорошо, хорошо сдать тест"],
       ["zahlen", "платить"],
       ["bekommen", "получать"]
+    ]
+  },
+  {
+    "id": "Warum möchte ich nach Deutschland?",
+    "title": "Почему я хочу поехать в Германию?",
+    "text": {
+      "de": "Ich möchte nach Deutschland, um dort zu studieren. Dieses Programm habe ich an der Universität kennengelernt. In meiner Familie war noch niemand in Deutschland. Meine Cousine hat früher in einem Hotel gearbeitet. Wenn ich mein Studium beendet habe, möchte ich in meinem Beruf arbeiten und vielleicht meinen Master in Deutschland machen. Deutsch brauche ich für mein Studium und meine Arbeit. Neue Chancen und Erfahrungen motivieren mich beim Deutschlernen. Ich motiviere mich, indem ich jeden Tag ein bisschen lerne. Freunde haben mir dieses Programm empfohlen. In fünf Jahren sehe ich mich in einem guten Job. Nach dem Studium möchte ich eine gute Arbeit finden und mein Wissen praktisch anwenden.",
+      "ru": "Я хочу поехать в Германию, чтобы там учиться. Об этой программе я узнал(а) в университете. В моей семье ещё никто не был в Германии. Моя двоюродная сестра раньше работала в отеле. Когда я закончу учёбу, я хочу работать по профессии и, возможно, учиться в магистратуре в Германии. Немецкий язык мне нужен для учёбы и работы. Новые возможности и опыт мотивируют меня в изучении немецкого. Я мотивирую себя тем, что учусь каждый день понемногу. Эту программу мне посоветовали друзья. Через пять лет я вижу себя на хорошей работе. После окончания учёбы я хочу найти хорошую работу и применять свои знания на практике."
+    },
+    "questions": [
+      [
+        "Warum wollen Sie nach Deutschland?",
+        "Почему вы хотите поехать в Германию?",
+        "Ich möchte in Deutschland studieren.",
+        "Я хочу учиться в Германии."
+      ],
+      [
+        "Wo haben Sie über dieses Programm gehört?",
+        "Где вы узнали об этой программе?",
+        "Ich habe Informationen im Internet gefunden.",
+        "Я нашёл(нашла) информацию в интернете."
+      ],
+      [
+        "Wer aus Ihrer Familie war schon in Deutschland?",
+        "Кто из вашей семьи уже был в Германии?",
+        "Noch niemand war in Deutschland.",
+        "Никто ещё не был в Германии."
+      ],
+      [
+        "Wo hat Ihre Cousine gearbeitet?",
+        "Где работала ваша двоюродная сестра?",
+        "Sie hat in einem Hotel gearbeitet.",
+        "Она работала в отеле."
+      ],
+      [
+        "Was werden Sie machen, wenn Sie fertig studiert haben?",
+        "Что вы будете делать, когда закончите учёбу?",
+        "Ich möchte in meinem Beruf arbeiten.",
+        "Я хочу работать по профессии."
+      ],
+      [
+        "Wo möchten Sie Ihren Master machen?",
+        "Где вы хотите учиться в магистратуре?",
+        "Ich möchte meinen Master in Deutschland machen.",
+        "Я хочу учиться в магистратуре в Германии."
+      ],
+      [
+        "Wofür brauchen Sie Deutsch?",
+        "Для чего вам нужен немецкий язык?",
+        "Ich brauche Deutsch für Studium und Arbeit.",
+        "Мне нужен немецкий для учёбы и работы."
+      ],
+      [
+        "Was motiviert Sie beim Deutschlernen?",
+        "Что вас мотивирует в изучении немецкого языка?",
+        "Neue Chancen motivieren mich.",
+        "Новые возможности меня мотивируют."
+      ],
+      [
+        "Wie motivieren Sie sich?",
+        "Как вы себя мотивируете?",
+        "Ich lerne jeden Tag ein bisschen.",
+        "Я учусь каждый день понемногу."
+      ],
+      [
+        "Wie sind Sie auf die Idee gekommen, sich für das Programm zu registrieren?",
+        "Как у вас появилась идея зарегистрироваться на эту программу?",
+        "Freunde haben es mir empfohlen.",
+        "Друзья мне это посоветовали."
+      ],
+      [
+        "Wo sehen Sie sich in 5 Jahren?",
+        "Где вы видите себя через 5 лет?",
+        "Ich sehe mich in einem guten Job.",
+        "Я вижу себя на хорошей работе."
+      ],
+      [
+        "Was sind Ihre Pläne nach dem Studium?",
+        "Каковы ваши планы после окончания учёбы?",
+        "Ich möchte eine gute Arbeit finden.",
+        "Я хочу найти хорошую работу."
+      ],
+      [
+        "Was machen Sie mit Ihrem Studium, wenn Sie beendet haben?",
+        "Что вы будете делать со своей учёбой, когда закончите её?",
+        "Ich möchte mein Wissen praktisch anwenden.",
+        "Я хочу применить знания на практике."
+      ]
+    ],
+    "vocab": [
+      ["studieren", "учиться (в вузе)"],
+      ["die Universität, -en", "университет"],
+      ["das Studium, die Studien", "учёба, обучение"],
+      ["der Master", "магистратура"],
+      ["die Arbeit, -en", "работа"],
+      ["empfehlen", "рекомендовать"],
+      ["anwenden", "применять"],
+      ["motivieren", "мотивировать"],
+      ["die Chance, -n", "шанс, возможность"],
+      ["die Erfahrung, -en", "опыт"]
     ]
   }
 ]

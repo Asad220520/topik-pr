@@ -1,484 +1,386 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Слова и вопросы из Топика</title>
-    <style>
-      body {
-        background: #071028;
-        color: #e6eef6;
-        font-family: Inter, sans-serif;
-        margin: 0;
-        padding: 12px;
-      }
-      .container {
-        max-width: 700px;
-        margin: 0 auto;
-      }
-      h1 {
-        text-align: center;
-        margin: 12px 0;
-        font-size: 22px;
-      }
-      h2 {
-        text-align: center;
-        margin: 8px 0;
-        font-size: 16px;
-        color: #60d39b;
-      }
-      select {
-        width: 100%;
-        margin-bottom: 12px;
-        padding: 8px;
-        border-radius: 8px;
-        border: none;
-        background: #152036;
-        color: #e6eef6;
-      }
-      .tabs {
-        display: flex;
-        justify-content: space-around;
-        margin-bottom: 12px;
-      }
-      .tabs button {
-        flex: 1;
-        padding: 10px;
-        border: none;
-        cursor: pointer;
-        background: #152036;
-        color: #9aa6b2;
-        font-weight: 600;
-      }
-      .tabs button.active {
-        background: #60d39b;
-        color: #052018;
-      }
-      .card {
-        background: #0f1724;
-        border-radius: 12px;
-        padding: 12px;
-        margin-bottom: 12px;
-      }
-      button {
-        background: #60d39b;
-        border: none;
-        color: #052018;
-        padding: 10px;
-        border-radius: 12px;
-        font-size: 14px;
-        font-weight: 600;
-        cursor: pointer;
-        margin: 4px 0;
-      }
-      .text-lang-btn {
-        background: #152036;
-        color: #60d39b;
-        border: none;
-        padding: 6px 10px;
-        margin-left: 4px;
-        border-radius: 8px;
-        cursor: pointer;
-        font-size: 14px;
-      }
-      .qa-item,
-      .vocab-item {
-        background: rgba(255, 255, 255, 0.04);
-        border-radius: 8px;
-        padding: 8px;
-        margin-bottom: 6px;
-        cursor: pointer;
-      }
-      .qa-item:hover,
-      .vocab-item:hover {
-        background: rgba(255, 255, 255, 0.1);
-      }
-      .qa-item h4 {
-        margin: 0;
-        font-size: 15px;
-      }
-      .qa-item .details {
-        display: none;
-        margin-top: 6px;
-        font-size: 14px;
-        color: #9aa6b2;
-      }
-      .qa-item.open .details {
-        display: block;
-      }
-      .filter-input {
-        padding: 6px;
-        border-radius: 8px;
-        border: none;
-        width: 100%;
-        margin-bottom: 8px;
-        background: #152036;
-        color: #e6eef6;
-      }
-      .modal {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.6);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        visibility: hidden;
-        opacity: 0;
-        transition: opacity 0.2s;
-      }
-      .modal.show {
-        visibility: visible;
-        opacity: 1;
-      }
-      .modal-content {
-        background: #0f1724;
-        padding: 20px;
-        border-radius: 12px;
-        width: 90%;
-        max-width: 450px;
-      }
-      .modal-content input,
-      .modal-content textarea {
-        width: 100%;
-        padding: 8px;
-        margin-bottom: 10px;
-        border-radius: 8px;
-        border: none;
-        background: #152036;
-        color: #e6eef6;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Слова и вопросы из Топика</h1>
-      <h2 id="lessonTitle"></h2>
-      <select id="lessonSelect" onchange="switchLesson()"></select>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Слова и вопросы из Топика</title>
+  <style>
+    body { background: #071028; color: #e6eef6; font-family: Inter, sans-serif; margin: 0; padding: 12px; }
+    .container { max-width: 700px; margin: 0 auto; }
+    h1 { text-align: center; margin: 12px 0; font-size: 22px; }
+    h2 { text-align: center; margin: 8px 0; font-size: 16px; color: #60d39b; }
+    select { width: 100%; margin-bottom: 12px; padding: 8px; border-radius: 8px; border: none; background: #152036; color: #e6eef6; }
+    .tabs { display: flex; justify-content: space-around; margin-bottom: 12px; }
+    .tabs button { flex: 1; padding: 10px; border: none; cursor: pointer; background: #152036; color: #9aa6b2; font-weight: 600; }
+    .tabs button.active { background: #60d39b; color: #052018; }
+    .card { background: #0f1724; border-radius: 12px; padding: 12px; margin-bottom: 12px; }
+    button { background: #60d39b; border: none; color: #052018; padding: 10px; border-radius: 12px; font-size: 14px; font-weight: 600; cursor: pointer; margin: 4px 0; }
+    .text-lang-btn { background: #152036; color: #60d39b; border: none; padding: 6px 10px; margin-left: 4px; border-radius: 8px; cursor: pointer; font-size: 14px; }
+    .qa-item, .vocab-item { background: rgba(255, 255, 255, 0.04); border-radius: 8px; padding: 8px; margin-bottom: 6px; cursor: pointer; }
+    .qa-item:hover, .vocab-item:hover { background: rgba(255, 255, 255, 0.1); }
+    .qa-item h4 { margin: 0; font-size: 15px; }
+    .qa-item .details { display: none; margin-top: 6px; font-size: 14px; color: #9aa6b2; }
+    .qa-item.open .details { display: block; }
+    .filter-input { padding: 6px; border-radius: 8px; border: none; width: 100%; margin-bottom: 8px; background: #152036; color: #e6eef6; }
+    .modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); display: flex; justify-content: center; align-items: center; visibility: hidden; opacity: 0; transition: opacity 0.2s; }
+    .modal.show { visibility: visible; opacity: 1; }
+    .modal-content { background: #0f1724; padding: 20px; border-radius: 12px; width: 90%; max-width: 450px; }
+    .modal-content input, .modal-content textarea { width: 100%; padding: 8px; margin-bottom: 10px; border-radius: 8px; border: none; background: #152036; color: #e6eef6; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>Слова и вопросы из Топика</h1>
+  <h2 id="lessonTitle"></h2>
+  <select id="lessonSelect" onchange="switchLesson()"></select>
 
-      <div class="tabs">
-        <button id="tabBtnText" onclick="showTab('text')">Текст</button>
-        <button id="tabBtnQA" onclick="showTab('qa')">Вопросы</button>
-        <button id="tabBtnVocab" onclick="showTab('vocab')">Словарь</button>
-      </div>
+  <div class="tabs">
+    <button id="tabBtnText" onclick="showTab('text')">Текст</button>
+    <button id="tabBtnQA" onclick="showTab('qa')">Вопросы</button>
+    <button id="tabBtnVocab" onclick="showTab('vocab')">Словарь</button>
+    <button id="tabBtnPractice" onclick="showTab('practice')">Практика</button>
+  </div>
 
-      <!-- ТЕКСТ -->
-      <div id="tabText" class="tab-content">
-        <div class="card">
-          <div style="text-align: right; margin-bottom: 6px">
-            <button class="text-lang-btn" onclick="switchTextLang('de')">
-              DE
-            </button>
-            <button class="text-lang-btn" onclick="switchTextLang('ru')">
-              RU
-            </button>
-          </div>
-          <div
-            id="lessonText"
-            style="white-space: pre-line; cursor: pointer"
-          ></div>
-          <button onclick="openTextModal()">✏ Редактировать текст</button>
-        </div>
+  <!-- ТЕКСТ -->
+  <div id="tabText" class="tab-content">
+    <div class="card">
+      <div style="text-align: right; margin-bottom: 6px">
+        <button class="text-lang-btn" onclick="switchTextLang('de')">DE</button>
+        <button class="text-lang-btn" onclick="switchTextLang('ru')">RU</button>
       </div>
-
-      <!-- ВОПРОСЫ -->
-      <div id="tabQa" class="tab-content" style="display: none">
-        <div class="card">
-          <div id="qaArea"></div>
-          <button onclick="openQuestionModal()">➕ Добавить вопрос</button>
-        </div>
-      </div>
-
-      <!-- СЛОВАРЬ -->
-      <div id="tabVocab" class="tab-content" style="display: none">
-        <div class="card">
-          <input
-            type="text"
-            class="filter-input"
-            id="vocabFilter"
-            placeholder="Фильтр слов"
-            oninput="renderVocab()"
-          />
-          <div id="vocabArea"></div>
-          <button onclick="openVocabModal()">➕ Добавить слово</button>
-          <button onclick="clearVocab()">🗑 Очистить словарь</button>
-        </div>
-      </div>
-
-      <!-- КНОПКА СБРОСА -->
-      <div style="text-align:center; margin-top: 20px;">
-        <button onclick="resetLessons()">♻ Сбросить данные</button>
-      </div>
+      <div id="lessonText" style="white-space: pre-line; cursor: pointer"></div>
+      <button onclick="openTextModal()">✏ Редактировать текст</button>
     </div>
+  </div>
 
-    <!-- МОДАЛКИ -->
-    <div class="modal" id="textModal">
-      <div class="modal-content">
-        <h3>Редактировать текст</h3>
-        <textarea id="modalTextDE" placeholder="Немецкий текст"></textarea>
-        <textarea id="modalTextRU" placeholder="Русский текст"></textarea>
-        <button onclick="saveText()">Сохранить</button>
-        <button onclick="closeTextModal()">Отмена</button>
-      </div>
+  <!-- ПРАКТИКА -->
+  <div id="tabPractice" class="tab-content" style="display: none">
+    <div class="card">
+      <h3>Практика вопросов</h3>
+      <div id="practiceQuestion"></div>
+      <input type="text" id="practiceAnswer" placeholder="Ваш ответ на DE" />
+      <button onclick="checkAnswer()">Проверить</button>
+      <div id="practiceFeedback" style="margin-top: 8px;"></div>
+      <button onclick="nextQuestion()">Следующий вопрос</button>
     </div>
+  </div>
 
-    <div class="modal" id="questionModal">
-      <div class="modal-content">
-        <h3>Вопрос</h3>
-        <input type="text" id="modalQuestion" placeholder="Вопрос DE" />
-        <input type="text" id="modalQuestionRU" placeholder="Вопрос RU" />
-        <input type="text" id="modalAnswer" placeholder="Ответ DE" />
-        <input type="text" id="modalAnswerRU" placeholder="Ответ RU" />
-        <button onclick="saveQuestion()">Сохранить</button>
-        <button onclick="closeQuestionModal()">Отмена</button>
-      </div>
+  <!-- ВОПРОСЫ -->
+  <div id="tabQa" class="tab-content" style="display: none">
+    <div class="card">
+      <div id="qaArea"></div>
+      <button onclick="openQuestionModal()">➕ Добавить вопрос</button>
     </div>
+  </div>
 
-    <div class="modal" id="vocabModal">
-      <div class="modal-content">
-        <h3>Слово</h3>
-        <input type="text" id="modalDE" placeholder="DE" />
-        <input type="text" id="modalRU" placeholder="RU" />
-        <button onclick="saveVocab()">Сохранить</button>
-        <button onclick="closeVocabModal()">Отмена</button>
-      </div>
+  <!-- СЛОВАРЬ -->
+  <div id="tabVocab" class="tab-content" style="display: none">
+    <div class="card">
+      <input type="text" class="filter-input" id="vocabFilter" placeholder="Фильтр слов" oninput="renderVocab()" />
+      <div id="vocabArea"></div>
+      <button onclick="openVocabModal()">➕ Добавить слово</button>
+      <button onclick="clearVocab()">🗑 Очистить словарь</button>
     </div>
+  </div>
 
-    <script>
-      let lessons = [];
-      let currentLessonId = null;
-      let editingQuestionIndex = null;
-      let editingVocabIndex = null;
-      let currentTextLang = "de";
+  <!-- СБРОС -->
+  <div style="text-align:center; margin-top: 20px;">
+    <button onclick="resetLessons()">♻ Сбросить данные</button>
+  </div>
+</div>
 
-      async function loadLessons() {
-        try {
-          // пробуем взять из localStorage
-          const saved = localStorage.getItem("lessons");
-          if (saved) {
-            lessons = JSON.parse(saved);
-          } else {
-            const response = await fetch("lessons.json");
-            lessons = await response.json();
-            localStorage.setItem("lessons", JSON.stringify(lessons));
-          }
+<!-- МОДАЛКИ -->
+<div class="modal" id="textModal">
+  <div class="modal-content">
+    <h3>Редактировать текст</h3>
+    <textarea id="modalTextDE" placeholder="Немецкий текст"></textarea>
+    <textarea id="modalTextRU" placeholder="Русский текст"></textarea>
+    <button onclick="saveText()">Сохранить</button>
+    <button onclick="closeTextModal()">Отмена</button>
+  </div>
+</div>
 
-          currentLessonId = lessons[0]?.id || null;
-          populateLessonSelect();
-          renderAll();
-          showTab("text");
-        } catch (e) {
-          console.error("Ошибка загрузки:", e);
-        }
-      }
+<div class="modal" id="questionModal">
+  <div class="modal-content">
+    <h3>Вопрос</h3>
+    <input type="text" id="modalQuestion" placeholder="Вопрос DE" />
+    <input type="text" id="modalQuestionRU" placeholder="Вопрос RU" />
+    <input type="text" id="modalAnswer" placeholder="Ответ DE" />
+    <input type="text" id="modalAnswerRU" placeholder="Ответ RU" />
+    <button onclick="saveQuestion()">Сохранить</button>
+    <button onclick="closeQuestionModal()">Отмена</button>
+  </div>
+</div>
 
-      function resetLessons() {
-        if (!confirm("Сбросить данные и загрузить заново из lessons.json?")) return;
-        localStorage.removeItem("lessons");
-        loadLessons();
-      }
+<div class="modal" id="vocabModal">
+  <div class="modal-content">
+    <h3>Слово</h3>
+    <input type="text" id="modalDE" placeholder="DE" />
+    <input type="text" id="modalRU" placeholder="RU" />
+    <button onclick="saveVocab()">Сохранить</button>
+    <button onclick="closeVocabModal()">Отмена</button>
+  </div>
+</div>
 
-      function populateLessonSelect() {
-        const sel = document.getElementById("lessonSelect");
-        sel.innerHTML = lessons
-          .map((l) => `<option value="${l.id}">${l.title}</option>`)
-          .join("");
-        sel.value = currentLessonId;
-      }
+<script>
+let lessons = [];
+let currentLessonId = null;
+let editingQuestionIndex = null;
+let editingVocabIndex = null;
+let currentTextLang = "de";
+let practiceIndex = 0;
 
-      function switchLesson() {
-        currentLessonId = document.getElementById("lessonSelect").value;
-        renderAll();
-      }
+// ===== Общие функции =====
+function getCurrentLesson() {
+  return lessons.find(l => l.id === currentLessonId);
+}
 
-      function showTab(tab) {
-        document
-          .querySelectorAll(".tab-content")
-          .forEach((d) => (d.style.display = "none"));
-        document
-          .querySelectorAll(".tabs button")
-          .forEach((b) => b.classList.remove("active"));
+function showTab(tab) {
+  document.querySelectorAll(".tab-content").forEach(d => d.style.display = "none");
+  document.querySelectorAll(".tabs button").forEach(b => b.classList.remove("active"));
 
-        let tabId =
-          tab === "qa"
-            ? "tabQa"
-            : "tab" + tab.charAt(0).toUpperCase() + tab.slice(1);
-        let btnId =
-          tab === "qa"
-            ? "tabBtnQA"
-            : "tabBtn" + tab.charAt(0).toUpperCase() + tab.slice(1);
+  const tabIdMap = { text: "tabText", qa: "tabQa", vocab: "tabVocab", practice: "tabPractice" };
+  const btnIdMap = { text: "tabBtnText", qa: "tabBtnQA", vocab: "tabBtnVocab", practice: "tabBtnPractice" };
 
-        document.getElementById(tabId).style.display = "block";
-        document.getElementById(btnId).classList.add("active");
-      }
+  const tabId = tabIdMap[tab];
+  const btnId = btnIdMap[tab];
 
-      function speakDE(text) {
-        if (!text) return;
-        if ("speechSynthesis" in window) {
-          const ut = new SpeechSynthesisUtterance(text);
-          ut.lang = "de-DE";
-          speechSynthesis.cancel();
-          speechSynthesis.speak(ut);
-        }
-      }
+  if(tabId) document.getElementById(tabId).style.display = "block";
+  if(btnId) document.getElementById(btnId).classList.add("active");
 
-      function switchTextLang(lang) {
-        currentTextLang = lang;
-        renderLessonText();
-      }
+  if(tab === "practice") startPractice();
+}
 
-      function renderLessonText() {
-        const lesson = lessons.find((l) => l.id === currentLessonId);
-        const div = document.getElementById("lessonText");
-        div.innerText = lesson?.text?.[currentTextLang] || "";
-        if (currentTextLang === "de") {
-          div.style.cursor = "pointer";
-          div.onclick = () => speakDE(lesson?.text?.de);
-        } else {
-          div.style.cursor = "default";
-          div.onclick = null;
-        }
-      }
+// ===== Загрузка и выбор уроков =====
+async function loadLessons() {
+  try {
+    const saved = localStorage.getItem("lessons");
+    if(saved) lessons = JSON.parse(saved);
+    else {
+      const response = await fetch("lessons.json");
+      lessons = await response.json();
+      localStorage.setItem("lessons", JSON.stringify(lessons));
+    }
+    currentLessonId = lessons[0]?.id || null;
+    populateLessonSelect();
+    renderAll();
+    showTab("text");
+  } catch (e) { console.error("Ошибка загрузки:", e); }
+}
 
-      function openTextModal() {
-        const lesson = lessons.find((l) => l.id === currentLessonId);
-        document.getElementById("modalTextDE").value = lesson?.text?.de || "";
-        document.getElementById("modalTextRU").value = lesson?.text?.ru || "";
-        document.getElementById("textModal").classList.add("show");
-      }
+function resetLessons() {
+  if(!confirm("Сбросить данные и загрузить заново из lessons.json?")) return;
+  localStorage.removeItem("lessons");
+  loadLessons();
+}
 
-      function closeTextModal() {
-        document.getElementById("textModal").classList.remove("show");
-      }
+function populateLessonSelect() {
+  const sel = document.getElementById("lessonSelect");
+  sel.innerHTML = lessons.map(l => `<option value="${l.id}">${l.title}</option>`).join("");
+  sel.value = currentLessonId;
+}
 
-      function saveText() {
-        const lesson = lessons.find((l) => l.id === currentLessonId);
-        lesson.text.de = document.getElementById("modalTextDE").value;
-        lesson.text.ru = document.getElementById("modalTextRU").value;
-        localStorage.setItem("lessons", JSON.stringify(lessons));
-        renderLessonText();
-        closeTextModal();
-      }
+function switchLesson() {
+  currentLessonId = document.getElementById("lessonSelect").value;
+  renderAll();
+}
 
-      function renderQA() {
-        const qaArea = document.getElementById("qaArea");
-        qaArea.innerHTML = "";
-        const lesson = lessons.find((l) => l.id === currentLessonId);
-        lesson?.questions.forEach((q, i) => {
-          const div = document.createElement("div");
-          div.className = "qa-item";
-          div.innerHTML = `<h4>❓ ${q[0]}</h4>
-            <div class="details"><b>RU:</b> ${q[1]}<br><b>DE ответ:</b> ${q[2]}<br><b>RU ответ:</b> ${q[3]}</div>`;
-          div.addEventListener("click", () => div.classList.toggle("open"));
-          div.addEventListener("dblclick", () =>
-            openQuestionModal(q[0], q[1], q[2], q[3], i)
-          );
-          qaArea.appendChild(div);
-        });
-      }
+// ===== Текст урока =====
+function switchTextLang(lang) {
+  currentTextLang = lang;
+  renderLessonText();
+}
 
-      function openQuestionModal(
-        q = "",
-        qru = "",
-        a = "",
-        aru = "",
-        index = null
-      ) {
-        document.getElementById("modalQuestion").value = q;
-        document.getElementById("modalQuestionRU").value = qru;
-        document.getElementById("modalAnswer").value = a;
-        document.getElementById("modalAnswerRU").value = aru;
-        editingQuestionIndex = index;
-        document.getElementById("questionModal").classList.add("show");
-      }
+function renderLessonText() {
+  const lesson = getCurrentLesson();
+  const div = document.getElementById("lessonText");
+  if(!lesson?.text) return;
+  div.innerText = lesson.text[currentTextLang] || "";
+  if(currentTextLang === "de") {
+    div.style.cursor = "pointer";
+    div.onclick = () => speakDE(lesson.text.de);
+  } else {
+    div.style.cursor = "default";
+    div.onclick = null;
+  }
+}
 
-      function closeQuestionModal() {
-        document.getElementById("questionModal").classList.remove("show");
-        editingQuestionIndex = null;
-      }
+function openTextModal() {
+  const lesson = getCurrentLesson();
+  document.getElementById("modalTextDE").value = lesson?.text?.de || "";
+  document.getElementById("modalTextRU").value = lesson?.text?.ru || "";
+  document.getElementById("textModal").classList.add("show");
+}
 
-      function saveQuestion() {
-        const q = document.getElementById("modalQuestion").value;
-        const qru = document.getElementById("modalQuestionRU").value;
-        const a = document.getElementById("modalAnswer").value;
-        const aru = document.getElementById("modalAnswerRU").value;
-        const lesson = lessons.find((l) => l.id === currentLessonId);
-        if (editingQuestionIndex != null)
-          lesson.questions[editingQuestionIndex] = [q, qru, a, aru];
-        else lesson.questions.push([q, qru, a, aru]);
-        localStorage.setItem("lessons", JSON.stringify(lessons));
-        renderQA();
-        closeQuestionModal();
-      }
+function closeTextModal() { document.getElementById("textModal").classList.remove("show"); }
 
-      function renderVocab() {
-        const area = document.getElementById("vocabArea");
-        const filter = document
-          .getElementById("vocabFilter")
-          .value.toLowerCase();
-        area.innerHTML = "";
-        const lesson = lessons.find((l) => l.id === currentLessonId);
-        lesson?.vocab
-          .filter(
-            (v) =>
-              v[0].toLowerCase().includes(filter) ||
-              v[1].toLowerCase().includes(filter)
-          )
-          .forEach((v, i) => {
-            const div = document.createElement("div");
-            div.className = "vocab-item";
-            div.innerText = `${v[0]} — ${v[1]}`;
-            div.addEventListener("click", () => speakDE(v[0]));
-            div.addEventListener("dblclick", () =>
-              openVocabModal(v[0], v[1], i)
-            );
-            area.appendChild(div);
-          });
-      }
+function saveText() {
+  const lesson = getCurrentLesson();
+  lesson.text.de = document.getElementById("modalTextDE").value;
+  lesson.text.ru = document.getElementById("modalTextRU").value;
+  localStorage.setItem("lessons", JSON.stringify(lessons));
+  renderLessonText();
+  closeTextModal();
+}
 
-      function openVocabModal(de = "", ru = "", index = null) {
-        document.getElementById("modalDE").value = de;
-        document.getElementById("modalRU").value = ru;
-        editingVocabIndex = index;
-        document.getElementById("vocabModal").classList.add("show");
-      }
+// ===== Вопросы =====
+function renderQA() {
+  const qaArea = document.getElementById("qaArea");
+  qaArea.innerHTML = "";
+  const lesson = getCurrentLesson();
+  if(!lesson?.questions) return;
+  lesson.questions.forEach((q,i)=>{
+    const div = document.createElement("div");
+    div.className = "qa-item";
+    div.innerHTML = `<h4>❓ ${q[0]}</h4>
+      <div class="details"><b>RU:</b> ${q[1]}<br><b>DE ответ:</b> ${q[2]}<br><b>RU ответ:</b> ${q[3]}</div>`;
+    div.addEventListener("click", ()=>div.classList.toggle("open"));
+    div.addEventListener("dblclick", ()=>openQuestionModal(q[0], q[1], q[2], q[3], i));
+    qaArea.appendChild(div);
+  });
+}
 
-      function closeVocabModal() {
-        document.getElementById("vocabModal").classList.remove("show");
-        editingVocabIndex = null;
-      }
+function openQuestionModal(q="", qru="", a="", aru="", index=null) {
+  document.getElementById("modalQuestion").value = q;
+  document.getElementById("modalQuestionRU").value = qru;
+  document.getElementById("modalAnswer").value = a;
+  document.getElementById("modalAnswerRU").value = aru;
+  editingQuestionIndex = index;
+  document.getElementById("questionModal").classList.add("show");
+}
 
-      function saveVocab() {
-        const de = document.getElementById("modalDE").value;
-        const ru = document.getElementById("modalRU").value;
-        const lesson = lessons.find((l) => l.id === currentLessonId);
-        if (editingVocabIndex != null)
-          lesson.vocab[editingVocabIndex] = [de, ru];
-        else lesson.vocab.push([de, ru]);
-        localStorage.setItem("lessons", JSON.stringify(lessons));
-        renderVocab();
-        closeVocabModal();
-      }
+function closeQuestionModal() {
+  document.getElementById("questionModal").classList.remove("show");
+  editingQuestionIndex = null;
+}
 
-      function clearVocab() {
-        if (!confirm("Очистить словарь?")) return;
-        const lesson = lessons.find((l) => l.id === currentLessonId);
-        lesson.vocab = [];
-        localStorage.setItem("lessons", JSON.stringify(lessons));
-        renderVocab();
-      }
+function saveQuestion() {
+  const q = document.getElementById("modalQuestion").value;
+  const qru = document.getElementById("modalQuestionRU").value;
+  const a = document.getElementById("modalAnswer").value;
+  const aru = document.getElementById("modalAnswerRU").value;
+  const lesson = getCurrentLesson();
+  if(editingQuestionIndex != null) lesson.questions[editingQuestionIndex] = [q,qru,a,aru];
+  else lesson.questions.push([q,qru,a,aru]);
+  localStorage.setItem("lessons", JSON.stringify(lessons));
+  renderQA();
+  closeQuestionModal();
+}
 
-      function renderAll() {
-        const lesson = lessons.find((l) => l.id === currentLessonId);
-        document.getElementById("lessonTitle").innerText = lesson?.title || "";
-        renderLessonText();
-        renderQA();
-        renderVocab();
-      }
+// ===== Словарь =====
+function renderVocab() {
+  const area = document.getElementById("vocabArea");
+  const filter = document.getElementById("vocabFilter").value.toLowerCase();
+  area.innerHTML = "";
+  const lesson = getCurrentLesson();
+  if(!lesson?.vocab) return;
+  lesson.vocab
+    .filter(v=>v[0].toLowerCase().includes(filter) || v[1].toLowerCase().includes(filter))
+    .forEach((v,i)=>{
+      const div = document.createElement("div");
+      div.className = "vocab-item";
+      div.innerText = `${v[0]} — ${v[1]}`;
+      div.addEventListener("click", ()=>speakDE(v[0]));
+      div.addEventListener("dblclick", ()=>openVocabModal(v[0], v[1], i));
+      area.appendChild(div);
+    });
+}
 
-      loadLessons();
-    </script>
-  </body>
+function openVocabModal(de="", ru="", index=null) {
+  document.getElementById("modalDE").value = de;
+  document.getElementById("modalRU").value = ru;
+  editingVocabIndex = index;
+  document.getElementById("vocabModal").classList.add("show");
+}
+
+function closeVocabModal() {
+  document.getElementById("vocabModal").classList.remove("show");
+  editingVocabIndex = null;
+}
+
+function saveVocab() {
+  const de = document.getElementById("modalDE").value;
+  const ru = document.getElementById("modalRU").value;
+  const lesson = getCurrentLesson();
+  if(editingVocabIndex != null) lesson.vocab[editingVocabIndex] = [de,ru];
+  else lesson.vocab.push([de,ru]);
+  localStorage.setItem("lessons", JSON.stringify(lessons));
+  renderVocab();
+  closeVocabModal();
+}
+
+function clearVocab() {
+  if(!confirm("Очистить словарь?")) return;
+  const lesson = getCurrentLesson();
+  lesson.vocab = [];
+  localStorage.setItem("lessons", JSON.stringify(lessons));
+  renderVocab();
+}
+
+// ===== Практика =====
+function startPractice() { practiceIndex = 0; showPracticeQuestion(); }
+
+function showPracticeQuestion() {
+  const lesson = getCurrentLesson();
+  if(!lesson?.questions?.length) return;
+  const q = lesson.questions[practiceIndex];
+  document.getElementById("practiceQuestion").innerHTML = `<b>❓ ${q[0]}</b><br><i>${q[1]}</i>`;
+  document.getElementById("practiceAnswer").value = "";
+  document.getElementById("practiceFeedback").innerText = "";
+}
+
+function checkAnswer() {
+  const lesson = getCurrentLesson();
+  if(!lesson?.questions?.length) return;
+  const q = lesson.questions[practiceIndex];
+  const userAnswer = document.getElementById("practiceAnswer").value.trim().toLowerCase();
+  const correctAnswer = q[2].trim().toLowerCase();
+  const feedback = document.getElementById("practiceFeedback");
+  if(userAnswer === correctAnswer) {
+    feedback.innerText = "✅ Правильно!";
+    speakDE(q[2]);
+  } else {
+    feedback.innerText = `❌ Неправильно. Правильный ответ: ${q[2]}`;
+    speakDE(q[2]);
+  }
+}
+
+function nextQuestion() {
+  const lesson = getCurrentLesson();
+  if(!lesson?.questions?.length) return;
+  practiceIndex = (practiceIndex + 1) % lesson.questions.length;
+  showPracticeQuestion();
+}
+
+// ===== Голосовой вывод =====
+function speakDE(text) {
+  if(!text) return;
+  if("speechSynthesis" in window){
+    const ut = new SpeechSynthesisUtterance(text);
+    ut.lang = "de-DE";
+    speechSynthesis.cancel();
+    speechSynthesis.speak(ut);
+  }
+}
+
+// ===== Общий рендер =====
+function renderAll() {
+  const lesson = getCurrentLesson();
+  document.getElementById("lessonTitle").innerText = lesson?.title || "";
+  renderLessonText();
+  renderQA();
+  renderVocab();
+}
+
+// ===== Закрытие модалок по клику вне =====
+document.querySelectorAll(".modal").forEach(modal => {
+  modal.addEventListener("click", e => {
+    if(e.target === modal) modal.classList.remove("show");
+  });
+});
+
+// ===== Инициализация =====
+loadLessons();
+</script>
+</body>
 </html>
